@@ -1,0 +1,207 @@
+<body>
+    <div id="app"></div>
+
+    <!-- <p class="introduction">
+      Fort de mon exp&eacute;rience en entreprise et sur des projets personnels accentu&eacute;e par mes formations au sein du Greta ainsi que de mon Master 2 &agrave; l’Efrei Paris, je saurai faire face aux probl&eacute;matiques se pr&eacute;sentant.
+    </p> -->
+    <div id="experiences"></div>
+    <div id="formations"></div>
+
+    <div class="projects">
+      <h2>Projets</h2>
+      <h3>Scolaire</h3>
+      <ul>
+        <li>Application mobile de messagerie en Flutter</li>
+        <li>Application web de Quiz avec Angular</li>
+        <li>ToDo List avec Flutter, Angular et Firebase</li>
+        <li>Cr&eacute;ation d’un jeux RTS en Rust</li>
+        <li>Cr&eacute;ation d’une application web URL shortcut en Golang</li>
+        <li>Gestionnaire d’offre de stage sur mobile avec Java Swing</li>
+        <li>Une interface de gestion de réservation avec CodeIngniter</li>
+      </ul>
+
+      <h3>Personnel</h3>
+      <ul>
+        <li>
+          Cr&eacute;ation d’une application mobile et web ToDo List avec Golang
+        </li>
+        <li>Modification d’une assistance vocale (Bixby) en JavaScript</li>
+      </ul>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
+
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afficher/Cacher un Groupe de Texte</title>
+    <style>
+      /* Styles pour personnaliser le contenu */
+      #contenu {
+        font-size: 16px;
+        color: #333;
+        margin-top: 20px;
+      }
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
+
+      p {
+        font-size: 18px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      li {
+        margin-bottom: 5px;
+      }
+
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Créer un bouton
+      const button = document.createElement('button')
+      button.id = 'toggleTexteBtn'
+      button.textContent = 'Expériences depuis 2021'
+
+      // Créer un conteneur pour le groupe de texte
+      const experience = document.createElement('div')
+      experience.id = 'contenu'
+      experience.style.display = 'block'
+
+      // Ajouter le contenu avec un titre, un paragraphe et une liste
+      experience.innerHTML = `
+      <div>
+        <h3>
+          Dernier Cri
+        </h3>
+        <p>
+          Dernier Cri est une entreprise de cr&eacute;ation de produit digitaux accompagnant ces clients de la conception jusqu’&agrave; la mise en production.
+        </p>
+        <ul>
+          <li>
+            Reprise d’un projet Ruby on Rails mettant en relation des agents de s&eacute;curit&eacute;s et des entreprises
+          </li>
+          <li>
+            Mise en place d’une App Engine GCP avec Terraform
+          </li>
+          <li>
+            Cr&eacute;ation d’une application interne permettant le suivie des employ&eacute;s avec Ruby on Rails et React JS
+          </li>
+          <li>
+            Cr&eacute;ation d’une application simplifiant la d&eacute;claration des biens avec Ruby on Rails
+          </li>
+          <li>
+            D&eacute;veloppment d’une application de service de livraison boissons en emballages consign&eacute;s avec Django
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>
+          &Ccedil;aToque
+        </h3>
+        <p>ÇaToque est une entreprise qui organise des cours de cuisine entre particuliers.</p>
+        <ul>
+          <li>
+            Cr&eacute;ation d’un blog avec HTML, CSS, PHP, Javascript et Bootstrap
+            </li>
+          <li>
+            Gestion de base de donn&eacute;es avec PhpMyAdmin
+          </li>
+      </div>
+
+      <div>
+        <h3>
+          Veesion
+        </h3>
+        <p>Veesion a d&eacute;velopp&eacute; une technologie de reconnaissance de gestes bas&eacute;e sur l'intelligence artificielle pour d&eacute;tecter le vol &agrave; l'&eacute;talage en temps r&eacute;el.</p>
+        <ul>
+          <li>
+            Cr&eacute;ation d’une application en Python pour faciliter le rapport et la navigation des vols dans les magasins
+          </li>
+          <li>
+            Gestion de l’apprentissage de l’I.A aux d&eacute;tections de vols
+          </li>
+          <li>
+            Compte-rendu de d&eacute;faillance
+          </li>
+        </ul>
+      </div>
+    `
+
+      // Ajouter un gestionnaire d'événement pour le bouton
+      button.addEventListener('click', () => {
+        if (experience.style.display === 'block') {
+          experience.style.display = 'none' // Cacher le contenu
+        } else {
+          experience.style.display = 'block' // Afficher le contenu
+        }
+      })
+
+      // Ajouter le bouton et le contenu au conteneur principal
+      const experiences = document.querySelector('#experiences')
+      experiences.appendChild(button)
+      experiences.appendChild(experience)
+    </script>
+    <script>
+      // Créer un bouton
+      const buttonExperience = document.createElement('button')
+      buttonExperience.id = 'toggleTexteBtn'
+      buttonExperience.textContent = 'Formation depuis 2019'
+
+      // Créer un conteneur pour le groupe de texte
+      const formation = document.createElement('div')
+      formation.id = 'contenu'
+      formation.style.display = 'block'
+
+      // Ajouter le contenu avec un titre, un paragraphe et une liste
+      formation.innerHTML = `
+        <h2>Formations depuis 2021</h2>
+        <p>
+          <b>Greta Hauts-de-Seine</b> - PHP / Symfony
+        </p>
+        <p>
+          <b>
+            &Eacute;cole d’Ing&eacute;nieurs Efrei Paris
+          </b>
+        </p>
+        <p>
+          Master 2 Manager D&eacute;veloppeur Fullstack
+        </p>
+        <p>
+          L3 Bachelor Concepteur D&eacute;veloppeur Global Programming
+        </p>
+      `
+
+      // Ajouter un gestionnaire d'événement pour le bouton
+      button.addEventListener('click', () => {
+        if (formation.style.display === 'block') {
+          formation.style.display = 'none' // Cacher le contenu
+        } else {
+          formation.style.display = 'block' // Afficher le contenu
+        }
+      })
+
+      // Ajouter le bouton et le contenu au conteneur principal
+      const formations = document.querySelector('#formations')
+      formations.appendChild(buttonExperience)
+      formations.appendChild(formation)
+    </script>
+  </body>
+</html>
