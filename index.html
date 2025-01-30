@@ -7,14 +7,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anass Aoulad</title>
   </head>
-  <body>
-    <div id="app">
+  <body class="grid-container">
+    <div class="grid-item-left">
+      <div class="profile">
+        <div>
+          <img src="./profile.jpg" alt="profile" />
+          <h1>Anass Aoulad</h1>
+          <h1>D&eacute;veloppeur Fullstack</h1>
+        </div>
+        <div class="button-link">
+          <a href="https://www.linkedin.com/in/anass-aoulad-7b1b3b1b3/">
+            <img src="./linkedin.png" alt="linkedin" />
+          </a>
+          <a href="https://github.com/AnassAoulad">
+            <img src="./github.png" alt="github" />
+          </a>
+          <a href="mailto:anass.aoulad.pro@gmail.com">
+            <img src="./mail.png" alt="mail" />
+          </a>
+        </div>
+      </div>
+
+      <div class="Langues">
+        <h2>Langues</h2>
+        <ul>
+          <li>Français Natif</li>
+          <li>Anglais B1</li>
+          <li>Espagnol A2</li>
+          <li>Portugais A1</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="grid-item-center">
+      <p class="introduction">
+        Fort de mon exp&eacute;rience en entreprise et sur des projets
+        personnels accentu&eacute;e par mes formations au sein du Greta ainsi
+        que de mon Master 2 &agrave; l’Efrei Paris, je saurai faire face aux
+        probl&eacute;matiques se pr&eacute;sentant.
+      </p>
       <div id="experiences">
         <button id="toggleExperiencesButton">
           Exp&eacute;riences depuis 2019
-          <img id="toggleImage" src="/arrow-up.png" alt="flèche vers le haut" />
+          <img
+            id="toggleImage"
+            src="assets/arrow-up.png"
+            alt="flèche vers le haut"
+          />
         </button>
-        <div id="contenu-experiences">
+        <div id="content-experiences">
           <div>
             <h3>Dernier Cri</h3>
             <p>
@@ -80,80 +121,140 @@
           </div>
         </div>
       </div>
-    </div>
 
-    <div id="formations">
-      <span>
-        <button id="toggle-formations">
-          Formations depuis 2021
-          <img src="/arrow-up.png" alt="flèche vers le haut" />
-        </button>
-      </span>
-      <div id="contenu-formations">
-        <p><b>Greta Hauts-de-Seine</b> - PHP / Symfony</p>
-        <p><b>École d’Ingénieurs Efrei Paris</b></p>
-        <p>Master 2 Manager Développeur Fullstack</p>
-        <p>L3 Bachelor Concepteur Développeur Global Programming</p>
+      <div id="formations">
+        <span>
+          <button id="toggle-formations">
+            Formations depuis 2021
+            <img src="assets/arrow-up.png" alt="flèche vers le haut" />
+          </button>
+        </span>
+        <div id="content-formations">
+          <p><b>Greta Hauts-de-Seine</b> - PHP / Symfony</p>
+          <p><b>École d’Ingénieurs Efrei Paris</b></p>
+          <p>Master 2 Manager Développeur Fullstack</p>
+          <p>L3 Bachelor Concepteur Développeur Global Programming</p>
+        </div>
+      </div>
+
+      <div id="projects">
+        <span>
+          <button id="projects-button">
+            Projets
+            <img src="assets/arrow-up.png" alt="flèche vers le haut" />
+          </button>
+        </span>
+        <div id="content-projects">
+          <h3>Scolaire</h3>
+          <ul>
+            <li>Application mobile de messagerie en Flutter</li>
+            <li>Application web de Quiz avec Angular</li>
+            <li>ToDo List avec Flutter, Angular et Firebase</li>
+            <li>Cr&eacute;ation d’un jeux RTS en Rust</li>
+            <li>
+              Cr&eacute;ation d’une application web URL shortcut en Golang
+            </li>
+            <li>Gestionnaire d’offre de stage sur mobile avec Java Swing</li>
+            <li>Une interface de gestion de réservation avec CodeIngniter</li>
+          </ul>
+
+          <h3>Personnel</h3>
+          <ul>
+            <li>
+              Cr&eacute;ation d’une application mobile et web ToDo List avec
+              Golang
+            </li>
+            <li>Modification d’une assistance vocale (Bixby) en JavaScript</li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <div id="projet">
-      <h2>Projets</h2>
-      <h3>Scolaire</h3>
-      <ul>
-        <li>Application mobile de messagerie en Flutter</li>
-        <li>Application web de Quiz avec Angular</li>
-        <li>ToDo List avec Flutter, Angular et Firebase</li>
-        <li>Cr&eacute;ation d’un jeux RTS en Rust</li>
-        <li>Cr&eacute;ation d’une application web URL shortcut en Golang</li>
-        <li>Gestionnaire d’offre de stage sur mobile avec Java Swing</li>
-        <li>Une interface de gestion de réservation avec CodeIngniter</li>
-      </ul>
+    <div class="grid-item-right">
+      <div class="Skills">
+        <h2>Comp&eacute;tences</h2>
+        <ul>
+          <li>PHP / Symfony</li>
+          <li>Python / Django</li>
+          <li>Ruby on Rails</li>
+          <li>Node JS</li>
+          <li>React JS / Native</li>
+          <li>Typescript</li>
+          <li>SQL</li>
+          <li>Terraform</li>
+          <li>Docker</li>
+          <li>Git</li>
+        </ul>
+      </div>
 
-      <h3>Personnel</h3>
-      <ul>
-        <li>
-          Cr&eacute;ation d’une application mobile et web ToDo List avec Golang
-        </li>
-        <li>Modification d’une assistance vocale (Bixby) en JavaScript</li>
-      </ul>
+      <div class="Tools">
+        <h2>Outils</h2>
+        <ul>
+          <li>PostgreSQL / MySQL</li>
+          <li>Cucumber</li>
+          <li>Github CI/CD</li>
+          <li>Grafana</li>
+          <li>VMWare</li>
+          <li>Firebase</li>
+          <li>Visual Studio</li>
+          <li>Vercel</li>
+          <li>Android Studio</li>
+          <li>Pack Office</li>
+          <li>Unix (Linux / MacOs)</li>
+        </ul>
+      </div>
     </div>
 
     <script>
       const toggleExperiencesButton = document.getElementById(
         'toggleExperiencesButton'
       )
-      const contenuExperiences = document.getElementById('contenu-experiences')
+      const contentExperiences = document.getElementById('content-experiences')
       const toggleImage = document.getElementById('toggleImage')
 
       toggleExperiencesButton.addEventListener('click', () => {
         if (
-          contenuExperiences.style.display === 'none' ||
-          contenuExperiences.style.display === ''
+          contentExperiences.style.display === 'none' ||
+          contentExperiences.style.display === ''
         ) {
-          contenuExperiences.style.display = 'block'
+          contentExperiences.style.display = 'block'
           toggleExperiencesButton.innerHTML =
-            'Expériences depuis 2021 <img id="toggleImage" src="arrow-down.png" alt="arrow down" width="20">'
+            'Expériences depuis 2019 <img id="toggleImage" src="assets/arrow-down.png" alt="arrow down" width="20">'
         } else {
-          contenuExperiences.style.display = 'none'
+          contentExperiences.style.display = 'none'
           toggleExperiencesButton.innerHTML =
-            'Expériences depuis 2021 <img id="toggleImage" src="arrow-up.png" alt="arrow up" width="20">'
+            'Expériences depuis 2019 <img id="toggleImage" src="assets/arrow-up.png" alt="arrow up" width="20">'
         }
       })
 
       const toggleFormationsButton =
         document.getElementById('toggle-formations')
-      const contenuFormations = document.getElementById('contenu-formations')
+      const contentFormations = document.getElementById('content-formations')
 
       toggleFormationsButton.addEventListener('click', () => {
-        if (contenuFormations.style.display === 'none') {
-          contenuFormations.style.display = 'block'
+        if (contentFormations.style.display === 'none') {
+          contentFormations.style.display = 'block'
           toggleFormationsButton.innerHTML =
-            'Formations depuis 2019 <img id="toggleImage" src="arrow-down.png" alt="arrow down" width="20">'
+            'Formations depuis 2021 <img id="toggleImage" src="assets/arrow-down.png" alt="arrow down" width="20">'
         } else {
-          contenuFormations.style.display = 'none'
+          contentFormations.style.display = 'none'
           toggleFormationsButton.innerHTML =
-            'Formations depuis 2019 <img id="toggleImage" src="arrow-up.png" alt="arrow up" width="20">'
+            'Formations depuis 2021 <img id="toggleImage" src="assets/arrow-up.png" alt="arrow up" width="20">'
+        }
+      })
+
+      const ProjectsButton = document.getElementById('projects-button')
+      const contentProjects = document.getElementById('content-projects')
+
+      ProjectsButton.addEventListener('click', () => {
+        if (contentProjects.style.display === 'none') {
+          contentProjects.style.display = 'block'
+          ProjectsButton.innerHTML =
+            'Projets <img id="buttonImage" src="assets/arrow-down.png" alt="arrow down" width="20">'
+        } else {
+          contentProjects.style.display = 'none'
+          ProjectsButton.innerHTML =
+            'Projets <img id="buttonImage" src="assets/arrow-up.png" alt="arrow up" width="20">'
         }
       })
     </script>
