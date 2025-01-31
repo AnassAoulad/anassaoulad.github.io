@@ -64,6 +64,8 @@ a {
 
 .introduction {
   font-family: 'MarkoOne-Regular';
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .langues {
@@ -110,10 +112,14 @@ a {
     cursor: pointer;
     text-align: center;
   }
+  :hover {
+    background-color: #8e8e93;
+  }
 }
 
 #toggleExperiencesButton {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
   width: 50%;
@@ -134,6 +140,7 @@ a {
 
 #toggle-formations {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
   width: 50%;
@@ -154,6 +161,7 @@ a {
 
 #projects-button {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   gap: 8px;
   width: 50%;
@@ -211,17 +219,36 @@ a {
 
 @media (max-width: 768px) {
   .grid-container {
-    grid-template-columns: 1fr; /* 1 seule colonne */
+    grid-template-columns: 1fr;
   }
   .grid-item-center {
-    order: 3; /* Devient le premier élément */
+    order: 3;
+    background-color: #f5f5f5 !important;
   }
 
   .grid-item-left {
-    order: 1; /* Passe en deuxième */
+    order: 1;
   }
 
   .grid-item-right {
-    order: 2; /* Passe en dernier */
+    order: 2;
+  }
+
+  .introduction {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    line-height: 1.5;
+    width: 100%;
+  }
+
+  #toggleExperiencesButton {
+    width: 100%;
+  }
+  #toggle-formations {
+    width: 100%;
+  }
+  #projects-button {
+    width: 100%;
   }
 }
