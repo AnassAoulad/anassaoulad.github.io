@@ -52,6 +52,16 @@ a {
   border-radius: 10px;
 }
 
+.profile {
+  text-align: center;
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+    margin: 20px;
+  }
+}
+
 .introduction {
   font-family: 'MarkoOne-Regular';
 }
