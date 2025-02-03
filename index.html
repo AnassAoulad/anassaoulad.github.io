@@ -47,14 +47,14 @@
         probl&eacute;matiques se pr&eacute;sentant.
       </p>
       <div id="experiences">
-        <button id="toggleExperiencesButton">
+        <p id="toggleExperiencesButton">
           Exp&eacute;riences depuis 2019
-          <img
+          <!-- <img
             id="toggleImage"
-            src="assets/arrow-up.png"
+            src="assets/click.png"
             alt="flèche vers le haut"
-          />
-        </button>
+          /> -->
+        </p>
         <div id="content-experiences">
           <h3 id="derniercri">Dernier Cri</h3>
           <div class="content-experiences-text">
@@ -122,10 +122,10 @@
 
       <div id="formations">
         <span>
-          <button id="toggle-formations">
+          <p id="toggle-formations">
             Formations depuis 2021
-            <img src="assets/arrow-up.png" alt="flèche vers le haut" />
-          </button>
+            <!-- <img src="assets/click.png" alt="flèche vers le haut" /> -->
+          </p>
         </span>
         <div id="content-formations">
           <p><b>Greta Hauts-de-Seine</b> - PHP / Symfony</p>
@@ -137,10 +137,10 @@
 
       <div id="projects">
         <span>
-          <button id="projects-button">
+          <p id="projects-button">
             Projets
-            <img src="assets/arrow-up.png" alt="flèche vers le haut" />
-          </button>
+            <!-- <img src="assets/click.png" alt="flèche vers le haut" /> -->
+          </p>
         </span>
         <div id="content-projects">
           <h3>Scolaire</h3>
@@ -204,57 +204,57 @@
     </div>
 
     <script>
-      const toggleExperiencesButton = document.getElementById(
-        'toggleExperiencesButton'
-      )
-      const contentExperiences = document.getElementById('content-experiences')
-      const toggleImage = document.getElementById('toggleImage')
+      // const toggleExperiencesButton = document.getElementById(
+      //   'toggleExperiencesButton'
+      // )
+      // const contentExperiences = document.getElementById('content-experiences')
+      // const toggleImage = document.getElementById('toggleImage')
 
-      toggleExperiencesButton.addEventListener('click', () => {
-        if (
-          contentExperiences.style.display === 'none' ||
-          contentExperiences.style.display === ''
-        ) {
-          contentExperiences.style.display = 'block'
-          toggleExperiencesButton.innerHTML =
-            'Expériences depuis 2019 <img id="toggleImage" src="assets/arrow-down.png" alt="arrow down" width="20">'
-        } else {
-          contentExperiences.style.display = 'none'
-          toggleExperiencesButton.innerHTML =
-            'Expériences depuis 2019 <img id="toggleImage" src="assets/arrow-up.png" alt="arrow up" width="20">'
-        }
-      })
+      // toggleExperiencesButton.addEventListener('click', () => {
+      //   if (
+      //     contentExperiences.style.display === 'none' ||
+      //     contentExperiences.style.display === ''
+      //   ) {
+      //     contentExperiences.style.display = 'block'
+      //     toggleExperiencesButton.innerHTML =
+      //       'Expériences depuis 2019 <img id="toggleImage" src="assets/click.png" alt="arrow down">'
+      //   } else {
+      //     contentExperiences.style.display = 'none'
+      //     toggleExperiencesButton.innerHTML =
+      //       'Expériences depuis 2019 <img id="toggleImage" src="assets/click.png" alt="arrow up">'
+      //   }
+      // })
 
-      const toggleFormationsButton =
-        document.getElementById('toggle-formations')
-      const contentFormations = document.getElementById('content-formations')
+      // const toggleFormationsButton =
+      //   document.getElementById('toggle-formations')
+      // const contentFormations = document.getElementById('content-formations')
 
-      toggleFormationsButton.addEventListener('click', () => {
-        if (contentFormations.style.display === 'none') {
-          contentFormations.style.display = 'block'
-          toggleFormationsButton.innerHTML =
-            'Formations depuis 2021 <img id="toggleImage" src="assets/arrow-down.png" alt="arrow down" width="20">'
-        } else {
-          contentFormations.style.display = 'none'
-          toggleFormationsButton.innerHTML =
-            'Formations depuis 2021 <img id="toggleImage" src="assets/arrow-up.png" alt="arrow up" width="20">'
-        }
-      })
+      // toggleFormationsButton.addEventListener('click', () => {
+      //   if (contentFormations.style.display === 'none') {
+      //     contentFormations.style.display = 'block'
+      //     toggleFormationsButton.innerHTML =
+      //       'Formations depuis 2021 <img id="toggleImage" src="assets/click.png" alt="arrow down">'
+      //   } else {
+      //     contentFormations.style.display = 'none'
+      //     toggleFormationsButton.innerHTML =
+      //       'Formations depuis 2021 <img id="toggleImage" src="assets/click.png" alt="arrow down">'
+      //   }
+      // })
 
-      const ProjectsButton = document.getElementById('projects-button')
-      const contentProjects = document.getElementById('content-projects')
+      // const ProjectsButton = document.getElementById('projects-button')
+      // const contentProjects = document.getElementById('content-projects')
 
-      ProjectsButton.addEventListener('click', () => {
-        if (contentProjects.style.display === 'none') {
-          contentProjects.style.display = 'block'
-          ProjectsButton.innerHTML =
-            'Projets <img id="buttonImage" src="assets/arrow-down.png" alt="arrow down" width="20">'
-        } else {
-          contentProjects.style.display = 'none'
-          ProjectsButton.innerHTML =
-            'Projets <img id="buttonImage" src="assets/arrow-up.png" alt="arrow up" width="20">'
-        }
-      })
+      // ProjectsButton.addEventListener('click', () => {
+      //   if (contentProjects.style.display == 'none') {
+      //     contentProjects.style.display = 'block'
+      //     ProjectsButton.innerHTML =
+      //       'Projets <img id="buttonImage" src="assets/click.png" alt="arrow down" width="20">'
+      //   } else {
+      //     contentProjects.style.display = 'none'
+      //     ProjectsButton.innerHTML =
+      //       'Projets <img id="buttonImage" src="assets/click.png" alt="arrow up" width="20">'
+      //   }
+      // })
     </script>
   </body>
 </html>
